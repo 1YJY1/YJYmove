@@ -1,0 +1,20 @@
+<!--pages/mine/mine.wxml-->
+<view class="whole-block">
+  <view class="first-block" bindtap="login">
+    <view class="login-text">
+      <text style="font-size:70rpx">{{userID}}</text>
+      <text style="font-size:30rpx">{{logintext}}</text>
+    </view>
+    <image src="{{avatar}}" class="head-image"></image>
+  </view>
+  <view class="order" bindtap="toOrderList">
+    <text style="font-size:40rpx;margin-left:80rpx">我的订单</text>
+    <text style="font-size:40rpx;margin-left:387rpx">></text>
+  </view>
+  <view class="coupon" bindtap="toCoupon">
+    <text style="font-size:40rpx;margin-left:80rpx">我的优惠券</text>
+    <text style="font-size:40rpx;margin-left:350rpx">></text>
+  </view>
+
+  <button class="btn {{isLogin? 'yes':'no'}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">{{btnText}}</button>
+</view>

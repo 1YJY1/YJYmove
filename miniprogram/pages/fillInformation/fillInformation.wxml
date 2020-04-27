@@ -1,0 +1,44 @@
+<!--pages/fillInformation/fillInformation.wxml-->
+<view class="whole-block">
+  <view class="order-detail">
+    <text class="txt" style="font-size: 40rpx;">订单详情</text>
+    <view style="background:black;width:95%;height:4rpx;align-self:center;"></view>
+    <text class="txt">服务类型  {{type}}</text>
+    <text class="txt">搬出地址  {{startAddress}}</text>
+    <text class="txt">搬入地址  {{endAddress}}</text>
+  </view>
+
+  <view class="fill-inf">
+  <view class="small-block" style="height:80rpx">
+  <image src="/icons/time.png" class="icon-style"></image>
+    <text >{{time}}</text>
+    </view>
+    <view class="divLine"></view>
+    <view class="small-block">
+    <image src="/icons/people.png" class="icon-style"></image>
+    <input placeholder="{{name}}" class="input" placeholder-style="margin-left:20rpx" bindblur="getName"></input>
+    </view>
+    <view class="divLine"></view>
+    <view class="small-block">
+    <image src="/icons/phone.png" class="icon-style"></image>
+    <input placeholder="请输入手机号" placeholder-style="margin-left:20rpx" maxlength="11" type="number" class="input" bindblur="getPhone"></input>
+    </view>
+    <view class="divLine"></view>
+    <view class="choose-coupon" bindtap="chooseCoupon">
+    <image src="/icons/time.png" class="icon-style"></image>
+      <text wx:if="{{!couponID}}">不使用优惠券</text>
+      <text wx:else>优惠{{coupon}}元</text>
+      <text style="margin-left:400rpx">></text>
+    </view>
+  </view>
+
+  <textarea placeholder="备注" maxlength="20" class="duohang" bindblur="getRemarks"></textarea>
+
+  <view class="bottom-block">
+  <view style="display:flex;flex-direction: column;">
+  <text style="font-size:40rpx;color:#EE0707;margin-left:80rpx">￥{{price-coupon}}</text>
+  <text style="font-size:20rpx;color:#929292;margin-left:65rpx">订单完成后付款</text>
+  </view>
+  <view class="btn" bindtap="submit">提交订单</view>
+  </view>
+</view>

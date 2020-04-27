@@ -1,0 +1,19 @@
+<!--pages/searchAddress/searchAddress.wxml-->
+ <view class="searchBox">
+  <view class="currentcity" bindtap="toswitchcity">{{city}}</view>
+  <input class="search" type="text" placeholder="请输入地址" bindinput="search" />
+  <text class="cancel" bindtap="toindex">取消</text>
+</view>
+<view class="content">
+  <scroll-view class="scrollcontent" scroll-y style="height: {{scrollheight}}rpx;">
+    <block wx:for="{{searchresult}}" wx:for-item="address">
+    <view class="oneAddress" bindtap="getAddress" data-oneAddress="{{address}}">
+    <image src="/icons/positioning.png" class="icon"></image>
+    <view class="textView">
+    <text>{{address.title}}</text>
+    <text style="font-size:25rpx;color:#888">{{address.address}}</text>
+    </view>
+    </view>
+    </block>
+  </scroll-view>
+</view>

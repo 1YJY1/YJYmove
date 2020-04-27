@@ -1,0 +1,24 @@
+<!--pages/orderList/orderList.wxml-->
+<scroll-view class="sv-style" scroll-y="true" scroll-top="700rpx" refresher-enabled="true">
+  <block wx:for="{{orderList}}" wx:for-item="order">
+  <view class="one-order" bindtap="toOrderDetail" data-order="{{order}}">
+    <view class="header">
+      <text style="font-size:36rpx;margin-left:80rpx;">{{order.type}}</text>
+      <text wx:if="{{order.status==0}}" class="statusText" style="color:#1088A2">服务中</text>
+      <text wx:elif="{{order.status==1}}" class="statusText" style="color:#07ce7b">已完成</text>
+      <text wx:else class="statusText" style="color:#c31111">已取消</text>
+    </view>
+    <view style="width:95%;height:2rpx;background:black;display:flex;align-self: center;"></view>
+    <view class="detail">
+      <view class="detail-left">
+        <text style="margin-left:20rpx;font-size:30rpx">{{order.time}}</text>
+        <text style="margin-left:20rpx;font-size:30rpx">{{order.startAddress}}</text>
+        <text style="margin-left:20rpx;font-size:30rpx">{{order.endAddress}}</text>
+      </view>
+      <view style="width:40%;height:100%;display:flex;align-items: center;justify-content: center;">
+        <text>预计价格：{{order.price}}元</text>
+      </view>
+    </view>
+  </view>
+  </block> 
+</scroll-view>

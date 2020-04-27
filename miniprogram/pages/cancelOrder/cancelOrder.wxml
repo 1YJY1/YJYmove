@@ -1,0 +1,9 @@
+<!--pages/cancelOrder/cancelOrder.wxml-->
+<view class="whole-page">
+  <view class="reasons" wx:for="{{reasons}}" wx:key="index">
+    <view class="reason {{id === index+1 ?'on': ''}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="switchTab">{{item.reason}}</view>
+  </view>
+  <textarea placeholder="请写下您的取消原因" placeholder-style="font-size:30rpx;color:#888" class="duohang"></textarea>
+
+  <view class="btn {{id>=1? 'yes':''}}" bindtap="cancelOrder">确认取消</view>
+</view>

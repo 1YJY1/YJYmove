@@ -1,0 +1,11 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="whole-block">
+  <view class="dui-huan">
+    <input placeholder="请输入兑换码" placeholder-style="font-size:30rpx;color:#888" style="width:500rpx;height:100%;border:1px solid #888" bindinput="inputNumber"></input>
+    <view class="btn" bindtap="exchange">兑换</view>
+  </view>
+
+  <view class="coupon" bindtap="selected" data-oneCoupon="{{coupon}}" wx:for="{{couponList}}" wx:for-item="coupon">优惠{{coupon.coupon}}元</view>
+
+  <view hidden="{{way==1?true:false}}" class="nobtn" bindtap="noUse">不使用</view>
+</view>

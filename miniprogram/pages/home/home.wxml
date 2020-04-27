@@ -1,0 +1,49 @@
+<!--pages/home/home.wxml-->
+<view class="whole-page">
+  <view class="first-block">
+    <image src="/icons/mine.png" class="mine-icon" bindtap="toMine"></image>
+    <text style="font-size:50rpx;color:#177BDD">打包记忆，搬运理想</text>
+    <image src="/images/background.jpg" class="background-image"></image>
+  </view>
+  <map class="map" id="myMap" latitude="{{latitude}}" longitude="{{longitude}}"  show-location="true"  scale="{{scale}}" bindregionchange="viewChange" >
+  <cover-image src="/icons/return current.png" class="position-img" bindtap="backCurrentPos"></cover-image>
+  <!--<view class="positioning">-->
+  <button class="position-text" bindtap="fillAdd">{{currentAddress}}</button>
+  <cover-image src="/icons/positioning.png" class="positioningBtn"></cover-image>
+  <!--</view>-->
+  </map>
+
+  <view class="third-block">
+    <view class="type-choose">
+      <view class="typeLists {{currentTab == index ? 'on' : ''}}" data-current="{{index}}" bindtap="clickType" wx:for="{{typeName}}" wx:key="index">
+        {{item.name}}
+      </view>
+    </view>
+    <swiper class="cars" current="{{currentTab}}" circular="true" bindchange="bindChange" bindtap="toDetail">
+      <block wx:for="{{cars}}" wx:key="index">
+        <swiper-item class="carview">
+          <image class="carImg" src="{{item.image}}" mode="aspectFill" />
+          <text style="font-size:25rpx;color:#177BDD">点击图片查看车型详情 ></text>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class="fourth-block">
+    <image src="/icons/vertical line.png" class="address-icon"></image>
+    <view class="fill-address">
+      <input placeholder="{{startAdd}}" placeholder-style="font-size:30rpx;color:#888 " bindtap="fillStartAdd"></input>
+      <view class="divLine"></view>
+      <input placeholder="{{endAdd}}" placeholder-style="font-size:30rpx;color:#888 " bindtap="fillEndAdd"></input>
+    </view>
+  </view>
+
+  <view class="fifth-block">
+    <text>预计:{{price}}元</text>
+  </view>
+
+  <!--<view class="btn" bindtap="toFillInf">立即预约</view>-->
+  <picker class='btn' mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">预约时间</picker>
+
+</view>

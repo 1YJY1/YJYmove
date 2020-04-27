@@ -1,0 +1,23 @@
+/* pages/typeDetail/xbDetail/xbDetail.wxss */
+
+Page {
+  width: 100%;
+  height: 100%;
+}
+
+.whole-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 100%;
+  height: 500rpx;
+}
+
+.txt{
+  margin-top:40rpx;
+  margin-left: 40rpx;
+}

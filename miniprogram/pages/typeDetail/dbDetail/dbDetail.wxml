@@ -1,0 +1,7 @@
+<!--pages/typeDetail/dbDetail/dbDetail.wxml-->
+<view class="whole-block">
+<image src="/images/dbxq.png" class="img"></image>
+<text class="txt">起步价：   399元</text>
+<text class="txt">超出10公里每公里30元</text>
+<text style="text-indent:40rpx;margin-top:40rpx;">搬家路线及里程以腾讯地图提供的两地间最优行驶距离为准</text>
+</view>

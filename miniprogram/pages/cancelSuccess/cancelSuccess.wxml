@@ -1,0 +1,7 @@
+<!--pages/cancelSuccess/cancelSuccess.wxml-->
+<view class="whole-page">
+  <image src="/icons/duihao.png" class="img"></image>
+  <text style="front-size:20rpx;color:#929292">订单已取消！</text>
+
+  <view class="btn" bindtap="toHome">返回首页</view>
+</view>

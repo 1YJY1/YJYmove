@@ -1,0 +1,83 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class="whole-block">
+
+  <view class="header {{statusText=='服务中' ? 'serving':(statusText=='已完成'?'completed':'cancelled')}}">
+    <text style="font-size:50rpx;margin-left:50rpx">{{statusText}}</text>
+  </view>
+
+  <view class="order-detail">
+    <view class="big-block">
+      <text>订单详情</text>
+    </view>
+    <view class="divLine"></view>
+    <view class="small-block">
+      <text>服务类型</text>
+      <text>{{type}}</text>
+    </view>
+    <view class="small-block">
+      <text>搬出地址</text>
+      <text>{{startAddress}}</text>
+    </view>
+    <view class="small-block">
+      <text>搬入地址</text>
+      <text>{{endAddress}}</text>
+    </view>
+    <view class="small-block">
+      <text>备注</text>
+      <text>{{remarks}}</text>
+    </view>
+  </view>
+
+  <view class="price-detail">
+    <view class="big-block">
+      <text>收费明细</text>
+    </view>
+    <view class="divLine"></view>
+    <view class="small-block">
+      <text>起步价</text>
+      <text>{{startPrice}}元</text>
+    </view>
+    <view class="small-block">
+      <text>超出里程费</text>
+      <text>{{price-startPrice}}元</text>
+    </view>
+    <view class="small-block">
+      <text>优惠金额</text>
+      <text>{{coupon}}元</text>
+    </view>
+    <view class="divLine"></view>
+    <view class="big-block">
+      <text>应付金额</text>
+      <text style="font-size:36rpx;margin-left:450rpx">{{price-coupon}}元</text>
+    </view>
+  </view>
+
+  <view class="order-inf">
+    <view class="big-block">
+      <text>订单信息</text>
+    </view>
+    <view class="divLine"></view>
+    <view class="small-block">
+      <text>订单号</text>
+      <text>{{orderID}}</text>
+    </view>
+    <view class="small-block">
+      <text>预约时间</text>
+      <text>{{time}}</text>
+    </view>
+    <view class="small-block">
+      <text>联系人</text>
+      <text>{{name}}</text>
+    </view>
+    <view class="small-block">
+      <text>手机号</text>
+      <text>{{phone}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{statusText=='服务中'}}" class="servingBtn">
+  <view class="cancelBtn" bindtap="toCancel">取消订单</view>
+  <view class="completeBtn" bindtap="completeOrder">完成订单</view>
+  </view>
+  <view wx:else class="oneMore" bindtap="oneMore">再来一单</view>
+</view>

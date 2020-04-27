@@ -1,0 +1,2 @@
+/* pages/orderSuccess/orderSuccess.wxss */
+@import "/pages/cancelSuccess/cancelSuccess"

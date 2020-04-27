@@ -1,0 +1,205 @@
+/* pages/home/home.wxss */
+
+/*整个页面*/
+
+.whole-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/*标语栏*/
+
+.first-block {
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*个人中心图标*/
+
+.mine-icon {
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/**/
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/**/
+
+.second-block {
+}
+
+/*地图*/
+
+.map {
+  width: 100%;
+  height: 400rpx;
+}
+
+
+.positioning{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*当前位置*/
+.position-text{
+  margin-top:100rpx;
+  font-size: 20rpx;
+  border: 1rpx solid green
+}
+
+/*移动找点的图标*/
+.positioningBtn{
+  width:60rpx;
+  height:60rpx;
+  margin-left: 345rpx;
+  margin-top:10rpx;
+}
+/*回到当前位置图标*/
+.position-img{
+  width: 65rpx;
+  height: 65rpx;
+  position: absolute;
+  bottom: 10rpx;
+  margin-left: 90%;
+}
+
+/*选择车型*/
+
+.third-block {
+  position: relative;
+  width: 100%;
+  height: 450rpx;
+}
+
+/*车型*/
+
+.type-choose {
+  width: 100%;
+  height: 100rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*车型文字*/
+
+.typeLists {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.on{
+  color: #177BDD;
+  border-bottom: 1rpx solid #177BDD
+}
+/*车型滑块*/
+
+.cars {
+  display: flex;
+  width: 100%;
+  height: 350rpx;
+  margin-bottom: 40rpx;
+  display: inline-block;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.carview {
+  width: 100%;
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*车型图片*/
+
+.carImg {
+  width: 100%;
+  height: 350rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**/
+
+.fourth-block {
+  position: relative;
+  width: 100%;
+  height: 120rpx;
+  border: 1px solid #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-icon {
+  width: 20%;
+  height: 80%;
+}
+
+.fill-address {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*分割线*/
+
+.divLine {
+  background: #888;
+  width: 90%;
+  height: 2rpx;
+}
+
+/*预计金额*/
+
+.fifth-block {
+  text-align: center;
+  font-size: 40rpx;
+}
+
+/*预约按钮*/
+
+.btn {
+  width: 750rpx;
+  height: 80rpx;
+  bottom: 0rpx;
+  position: absolute;
+  border-radius: 8px 8px 8px 8px;
+  background-color: rgba(16, 136, 162, 1);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(187, 187, 187, 1);
+}

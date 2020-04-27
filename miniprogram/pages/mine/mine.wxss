@@ -1,0 +1,78 @@
+/* pages/mine/mine.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.whole-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-block {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+
+.login-text {
+  margin-top: 80rpx;
+  margin-left: 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  margin-left: 200rpx;
+  margin-top: 80rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+}
+
+.order {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 100rpx;
+  display: flex;
+  align-items: center;
+  border: 1px solid #888;
+}
+
+.coupon {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border: 1px solid #888;
+}
+
+.divLine {
+  background: #888;
+  width: 100%;
+  height: 2rpx;
+  margin-bottom: 10rpx;
+}
+
+.btn {
+  margin-top: 200rpx;
+  border-radius: 8px 8px 8px 8px;
+  color: #dfe1de;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.no{
+  background-color: #04a304;
+}
+
+.yes{
+  background-color: #ce1a1a;
+}
+

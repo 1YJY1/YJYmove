@@ -1,0 +1,48 @@
+/* pages/orderList/orderList.wxss */
+
+Page {
+  background-color: white;
+}
+
+.sv-style {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.one-order {
+  width: 99%;
+  height: 300rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1rpx solid #888;
+}
+
+.header {
+  width: 99%;
+  height: 60rpx;
+  display: flex;
+  align-items: center
+}
+
+.statusText{
+  font-size:36rpx;
+  margin-left:400rpx;
+}
+
+.detail {
+  width: 99%;
+  height: 210rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-left{
+  width:60%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

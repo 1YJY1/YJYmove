@@ -1,0 +1,7 @@
+<!--pages/orderSuccess/orderSuccess.wxml-->
+<view class="whole-page">
+  <image src="/icons/duihao.png" class="img"></image>
+  <text style="front-size:20rpx;color:#929292">预约成功！后续师傅会与您进行电话联系</text>
+  <text style="front-size:20rpx;color:#929292">请保持电话通畅</text>
+  <view class="btn" bindtap="toOrderDetail">查看我的订单</view>
+</view>
