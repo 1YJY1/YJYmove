@@ -11,7 +11,7 @@
 	},
 	"appid": "wxeed6f26e895c25e8",
 	"projectname": "YJYmove",
-	"libVersion": "2.10.4",
+	"libVersion": "2.11.0",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",

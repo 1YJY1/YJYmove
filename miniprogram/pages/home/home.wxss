@@ -16,7 +16,7 @@
 .first-block {
   position: relative;
   width: 100%;
-  height: 100rpx;
+  height: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,7 @@
 
 .map {
   width: 100%;
-  height: 400rpx;
+  height: 32vh;
 }
 
 
@@ -91,14 +91,14 @@
 .third-block {
   position: relative;
   width: 100%;
-  height: 450rpx;
+  height: 38vh;
 }
 
 /*车型*/
 
 .type-choose {
   width: 100%;
-  height: 100rpx;
+  height: 20%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@
 
 .typeLists {
   width: 100%;
-  height: 90rpx;
+  height: 90%;
   line-height: 90rpx;
   text-align: center;
   font-size: 30rpx;
@@ -123,7 +123,7 @@
 .cars {
   display: flex;
   width: 100%;
-  height: 350rpx;
+  height: 80%;
   margin-bottom: 40rpx;
   display: inline-block;
   white-space: nowrap;
@@ -132,7 +132,7 @@
 
 .carview {
   width: 100%;
-  height: 350rpx;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +153,7 @@
 .fourth-block {
   position: relative;
   width: 100%;
-  height: 120rpx;
+  height: 10vh;
   border: 1px solid #888;
   display: flex;
   justify-content: center;
@@ -183,6 +183,8 @@
 /*预计金额*/
 
 .fifth-block {
+  width: 100%;
+  height: 5vh;
   text-align: center;
   font-size: 40rpx;
 }
@@ -191,7 +193,7 @@
 
 .btn {
   width: 750rpx;
-  height: 80rpx;
+  height: 7vh;
   bottom: 0rpx;
   position: absolute;
   border-radius: 8px 8px 8px 8px;
