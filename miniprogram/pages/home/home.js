@@ -536,7 +536,8 @@ Page({
   bindStartMultiPickerChange: function (e) {
 
     var that = this;
-    if (!app.globalData.userInfo) {  //判断是否登录
+    //console.log(Object.keys(app.globalData.userInfo).length)
+    if (Object.keys(app.globalData.userInfo).length==0) {  //判断是否登录
       wx.showModal({
         title: '提示',
         content: '您还未登录',
