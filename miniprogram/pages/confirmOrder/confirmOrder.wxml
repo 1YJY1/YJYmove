@@ -1,13 +1,8 @@
-<!--pages/orderDetail/orderDetail.wxml-->
+<!--pages/dirverOrder/dirverOrder.wxml-->
 <view class="whole-block">
 
-  <view class="header {{statusText=='待接单' ? 'taking':( statusText=='服务中' ? 'serving':(statusText=='待付款'? 'paying':(statusText=='已完成'?'completed':'cancelled')))}}">
-    <text style="font-size:50rpx;margin-left:50rpx">{{statusText}}</text>
-
-    <view class="driverInf" hidden="{{!haveDriver}}">
-    <text>司机:{{driverName}}</text>
-    <text>联系电话:{{driverPhone}}</text>
-    </view>
+  <view class="header">
+    <text style="font-size:50rpx;margin-left:50rpx">待接单</text>
   </view>
 
   <view class="order-detail">
@@ -80,14 +75,5 @@
     </view>
   </view>
 
-  <view wx:if='{{way=="c"}}' class="lastBlock">
-  <view wx:if="{{statusText=='待接单' ||statusText=='服务中'}}" class="cancelBtn" bindtap="toCancel">取消订单</view>
-  <view wx:elif="{{statusText=='待付款'}}" class="oneMore" style="background-color: #08AA0E;" bindtap="toPay">去支付</view>
-  <view wx:else class="oneMore" bindtap="oneMore">再来一单</view>
-  </view>
-
-  <view wx:else class="lastBlock">
-  <view wx:if="{{statusText=='服务中'}}" class="oneMore" style="background-color: #07ce7b;" bindtap="completeOrder">完成搬家</view>
-  <view wx:else class="oneMore" bindtap="toTake">去接单</view>
-  </view>
+  <view class="take" bindtap="toTake">确定接单</view>
 </view>

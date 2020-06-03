@@ -1,0 +1,31 @@
+/* pages/tabbar/tabbar.wxss */
+.bottomrow{
+  background-color: white;
+  width: 99%;
+  height: 9%;
+  bottom: 0rpx;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 4rpx solid rgba(187, 187, 187, 1);
+}
+
+.bottomtab{
+  width: 250rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.bottomtabText{
+  font-size: 32rpx;
+  color: #979797;
+}

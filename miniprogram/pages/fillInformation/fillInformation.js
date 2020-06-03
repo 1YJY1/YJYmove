@@ -97,7 +97,7 @@ Page({
         phone: app.globalData.phone,
         price: app.globalData.price,
         coupon: app.globalData.coupon,
-        status:0           //订单状态：0-服务中，1-已完成，2-已取消
+        status:0           //订单状态：0--待接单，1--服务中，2--待付款，3--已完成，4--已取消
       },
       success(res){
         console.log(res),

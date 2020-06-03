@@ -1,0 +1,38 @@
+<!--pages/dirver/dirver.wxml-->
+<view class="whole-block">
+  <view class="first-block" bindtap="login">
+    <view class="login-text">
+      <text style="font-size:50rpx">{{driverName}} 师傅</text>
+    </view>
+    <image src="/images/driver.png" class="head-image"></image>
+  </view>
+
+  <view class="driverInf">
+  <view class="Inf">
+  <image src="/icons/orders.png" class="img"></image>
+  <view class="txt">
+  <text>累计完成订单</text>
+  <text>{{finishOrders}}单</text>
+  </view>
+  </view>
+  <view class="Inf">
+  <image src="/icons/money.png" class="img"></image>
+  <view class="txt">
+  <text>累计收入</text>
+  <text>{{earnMoney}}元</text>
+  </view>
+  </view>
+  </view>
+
+  <view class="order" bindtap="toOrderList">
+    <text style="font-size:40rpx;margin-left:80rpx">我的订单</text>
+    <text style="font-size:40rpx;margin-left:387rpx">></text>
+  </view>
+  <view class="coupon" bindtap="changePws">
+    <text style="font-size:40rpx;margin-left:80rpx">修改密码</text>
+    <text style="font-size:40rpx;margin-left:387rpx">></text>
+  </view>
+
+  <button class="btn" bindtap="toRoles">退出登录</button>
+</view>
+<include src="/pages/tabbar/tabbar"/>

@@ -108,7 +108,7 @@ Page({
       })
     }else{
       wx.navigateTo({
-        url: '/pages/orderList/orderList',
+        url: '/pages/orderList/orderList?way=c',
       })
     }
   },

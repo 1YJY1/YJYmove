@@ -1,4 +1,6 @@
-// pages/orderSuccess/orderSuccess.js
+// pages/roles/roles.js
+const app = getApp()
+
 Page({
 
   /**
@@ -15,9 +17,23 @@ Page({
 
   },
 
-  toOrderDetail:function(e){
-    wx.redirectTo({
-      url: '/pages/orderDetail/orderDetail?way=c',
+  //跳转到司机端
+  toDriver:function(e){
+    console.log(app.globalData.driverPhone)
+    if(app.globalData.driverPhone){
+      wx.navigateTo({
+        url: '/pages/orderTake/orderTake',
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/driverLogin/driverLogin',
+      })
+    }
+  },
+  //跳转到用户端
+  toCustomer:function(e){
+    wx.navigateTo({
+      url: '/pages/home/home',
     })
   },
 

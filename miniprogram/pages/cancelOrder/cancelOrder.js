@@ -58,7 +58,7 @@ Page({
     }else{
       order.doc(app.globalData.orderID).update({
         data: {
-          status: 2
+          status: 4
         },
         success: function (re) {
           console.log(re),

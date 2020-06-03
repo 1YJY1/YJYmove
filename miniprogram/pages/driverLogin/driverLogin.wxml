@@ -1,0 +1,16 @@
+<!--pages/driverLogin/driverLogin.wxml-->
+<view class="background">
+  <view class="first">
+​      <input id="phone" placeholder="请输入手机号" maxlength="11" placeholder-class='plas' class='inputs' bindinput='phoneInput' type="text" />
+  </view>
+  <text class="txt">{{phoneerr}}</text>
+  <view class="second">
+​      <input id="psw" placeholder="请输入密码" placeholder-class='plas' class='inputs' type="password" bindinput='passwordInput' />
+  </view>
+  <text class="txt">{{pwserr}}</text>
+  <view id="btn" class="click" bindtap="login">登 录</view>
+
+  <view class="cha" bindtap='signup'>
+​    <text class="no">还没有账号？点我注册</text>
+  </view>
+</view>

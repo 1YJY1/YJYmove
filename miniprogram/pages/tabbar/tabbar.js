@@ -1,11 +1,21 @@
-// pages/orderSuccess/orderSuccess.js
+// pages/tabbar/tabbar.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    tab: [{
+      title: '接单',
+      icon: "/icons/orders.png",
+      selectedIcon: "/icons/orders2.png"
+    },
+    {
+      title: '我的',
+      icon: "/icons/person.png",
+      selectedIcon: "/icons/person2.png"
+    }
+    ],
   },
 
   /**
@@ -13,12 +23,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-
-  toOrderDetail:function(e){
-    wx.redirectTo({
-      url: '/pages/orderDetail/orderDetail?way=c',
-    })
   },
 
   /**

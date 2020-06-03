@@ -1,0 +1,24 @@
+<!--pages/orderTake/orderTake.wxml-->
+<scroll-view class="sv-style" scroll-y="true" scroll-top="700rpx" refresher-enabled="true">
+  <block wx:for="{{orderList}}" wx:for-item="order">
+  <view class="one-order">
+    <view class="header">
+      <text style="font-size:36rpx;margin-left:80rpx;">{{order.type}}</text>
+      <text style="margin-left:250rpx;font-size:28rpx">预计价格：{{order.price}}元</text>
+    </view>
+    <view style="width:95%;height:2rpx;background:black;display:flex;align-self: center;"></view>
+    <view class="detail">
+      <view class="detail-left">
+        <text style="margin-left:20rpx;font-size:30rpx">{{order.time}}</text>
+        <text style="margin-left:20rpx;font-size:30rpx">{{order.startAddress}}</text>
+        <text style="margin-left:20rpx;font-size:30rpx">{{order.endAddress}}</text>
+      </view>
+      <view style="width:30%;height:100%;display:flex;align-items: center;">
+      <view class="btn" bindtap="take" data-order="{{order}}">接单</view>
+      </view>
+    </view>
+  </view>
+  </block> 
+</scroll-view>
+
+<include src="/pages/tabbar/tabbar"/>

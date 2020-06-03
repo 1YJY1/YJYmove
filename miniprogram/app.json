@@ -1,6 +1,13 @@
 {
   "cloud":true,
   "pages": [
+    "pages/roles/roles",
+    "pages/driverLogin/driverLogin",
+    "pages/register/register",
+    "pages/orderTake/orderTake",
+    "pages/driver/driver",
+    "pages/tabbar/tabbar",
+    "pages/confirmOrder/confirmOrder",
     "pages/home/home",
     "pages/mine/mine",
     "pages/coupon/coupon",

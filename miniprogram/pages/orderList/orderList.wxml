@@ -4,8 +4,10 @@
   <view class="one-order" bindtap="toOrderDetail" data-order="{{order}}">
     <view class="header">
       <text style="font-size:36rpx;margin-left:80rpx;">{{order.type}}</text>
-      <text wx:if="{{order.status==0}}" class="statusText" style="color:#1088A2">服务中</text>
-      <text wx:elif="{{order.status==1}}" class="statusText" style="color:#07ce7b">已完成</text>
+      <text wx:if="{{order.status==0}}" class="statusText" style="color:#EC9724">待接单</text>
+      <text wx:elif="{{order.status==1}}" class="statusText" style="color:#1088A2">服务中</text>
+      <text wx:elif="{{order.status==2}}" class="statusText" style="color:#075AC8">待付款</text>
+      <text wx:elif="{{order.status==3}}" class="statusText" style="color:#07ce7b">已完成</text>
       <text wx:else class="statusText" style="color:#c31111">已取消</text>
     </view>
     <view style="width:95%;height:2rpx;background:black;display:flex;align-self: center;"></view>

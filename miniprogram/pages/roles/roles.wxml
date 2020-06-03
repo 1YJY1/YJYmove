@@ -1,0 +1,7 @@
+<!--pages/roles/roles.wxml-->
+<view class="whole-page">
+<view style="height: 200rpx;"></view>
+<view class="driver" bindtap="toDriver">我是司机</view>
+<view style="height: 200rpx;"></view>
+<view class="customer" bindtap="toCustomer">我是顾客</view>
+</view>

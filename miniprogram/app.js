@@ -62,7 +62,9 @@ App({
     status:0,
     orderID:"",
     couponID:"",
-    city:""
+    city:"",
+    driverPhone:"",
+    driverName:""
   },
 
   
